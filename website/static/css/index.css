@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@font-face {
+    font-family: 'Benzin-Regular', sans-serif;
+    src: url(website/static/fonts/Benzin-Regular.ttf);
+}
+
+@media all and (max-width: 600px) {
+    body
+    {
+        width: 100%;
+    }
+    .header .nav-top {
+        padding: 0;
+    }
+    .nav-top .logo
+    {
+        position: relative;
+        width: 40vw;
+        margin: 0 auto;
+    }
+    .nav-top .socials
+    {
+        display: none;
+    }
+    .nav-top .header-adress {
+        display: none;
+    }
+    body .nav-bottom {
+        display: none;
+        padding-top: 0;
+        padding-left: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+    }
+    .nav-bottom .nav-links {
+        display: none;
+    }
+    .nav-bottom .button_header {
+        display: none;
+    }
+    body .main-img-1block-mob {
+        display: block;
+        width: 100vw;
+        object-fit: cover;
+    }
+    body .main-img-1block {
+        display: none;
+    }
+    body .next_block {
+        padding: 3rem;
+    }
+    body h1 {
+        font-size: 3.5rem;
+        margin: 0;
+    }
+    .next_block .buttons_2block {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+    .next_block .menu_type {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: center;
+        height: auto;
+    }
+    .menu_type .menu_type_div {
+        width: 90vw;
+        height: 90vw;
+    }
+    .menu_type_div .menu_type_ph {
+        width: 90vw;
+        height: 90vw;
+    }
+    .third_block .mothers_day_div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+    .mothers_day_div .mothers_day_ph {
+        width: 100%;
+    }
+    .texts_btn_mothers_day_div .h2{
+        width: auto;
+    }
+    .third_block .art_within_mixology_div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+        margin-bottom: -1.33rem;
+    }
+    .art_within_mixology_div .art_within_mixology_ph {
+        width: 100%;
+        margin-top: 3rem;
+    }
+    .art_within_mixology_div .texts_btn_art_within_mixology_div {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .texts_btn_art_within_mixology_div .art_within_mixology_p {
+        text-align: center;
+        width: 23rem;
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+        margin-top: -1rem;
+    }
+    body .footer {
+        display: block;
+        padding: 0;
+        padding-left: 1.33rem;
+        padding-right: 1.33rem;
+    }
+    .footer_info_main .footer_info {
+        display: block;
+    }
+    .footer .google-map {
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .footer .footer_info_main {
+        padding-top: 5rem;
+    }
+}
+html{
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+body{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+p{
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.nav-top{
+    padding-top: 2rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    column-gap: 0,8rem;
+}
+
+.youtube{
+    margin-left: 0.8rem;
+}
+
+.facebook{
+    margin-left: 0.8rem;
+}
+
+.line {
+
+    display: block;
+    border-bottom: 1px solid #00AFC7; /* change this to the color and thickness you want */
+    opacity: 30%;
+
+}
+
+.logo{
+    margin-left: -6rem;
+    width: 10rem;
+}
+  
+.nav-bottom{
+    padding-top: 2rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 3rem;
+}
+
+.button_header{
+    width: 10rem;
+    height: 3.2rem;
+    color: white;
+    background-color: #00AFC7;
+    border-radius: 3px;
+    border: 0;
+    font-size: 1.33rem;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s;
+}
+
+.button_header:hover {
+    background-color: white;
+    color: #00AFC7;
+  }
+
+.main-img-1block-mob {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.next_block {
+    padding-top: 6.66rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 6.66rem;
+    background-color: white;
+    justify-content: center;
+}
+
+.next_block_form {
+    padding-top: 6.66rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 6.66rem;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu_type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons_2block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    margin-bottom: 5.8rem;
+    margin-top: 3.33rem;
+}
+
+h1 {
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.nemo {
+    color: #00AFC7;
+    text-transform: uppercase;
+}
+
+.button_2block_1 {
+    background-color: black;
+    color: white;
+    width: 17.33rem;
+    height: 4.53rem;
+    font-size: 1.6rem;
+    border-radius: 3px;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s;
+}
+
+.button_2block_2 {
+    background-color: black;
+    color: white;
+    width: 25rem;
+    height: 4.53rem;
+    font-size: 1.6rem;
+    border-radius: 3px;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s;
+}
+
+.button_2block_3 {
+    background-color: black;
+    color: white;
+    width: 17.33rem;
+    height: 4.53rem;
+    font-size: 1.6rem;
+    border-radius: 3px;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s;
+}
+
+.button_2block_1:hover {
+    background-color: #00AFC7;
+    color: white;
+  }
+
+  .button_2block_2:hover {
+    background-color: #00AFC7;
+    color: white;
+  }
+
+  .button_2block_3:hover {
+    background-color: #00AFC7;
+    color: white;
+  }
+
+.menu_type_div {
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    text-align: center;
+    width: 32%;
+    height: 32%;
+}
+
+.menu_type_name {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; /** Y-axis align **/
+    justify-content: center; /** X-axis align **/
+    font-family: 'Benzin-Regular', sans-serif;
+    font-size: 3.2rem;
+}
+
+
+.christmas_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: -1.5rem;
+}
+
+h2 {
+    font-size: 2.66rem;
+    text-align: center;
+    color: white;
+}
+
+.texts_btn_christmas_div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.christmas_p {
+    text-align: center;
+    width: 22.86rem;
+    font-size: 1.2rem;
+    margin-top: -1rem;
+}
+
+.button_3block_1 {
+    background-color: transparent;
+    border: 1px solid #00AFC7;
+    color: white;
+    width: 13.8rem;
+    height: 3.53rem;
+    font-size: 1.6rem;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s;
+    margin-top: 3rem;
+}
+
+.button_3block_1:hover {
+    background-color: #00AFC7;
+  }
+
+.line_2 {
+    display: block;
+    border-bottom: 1px solid #00AFC7; /* change this to the color and thickness you want */
+    opacity: 30%;
+
+}
+
+  .art_within_mixology_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: -1.5rem;
+}
+
+.art_within_mixology_p {
+    text-align: center;
+    width: 26rem;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    margin-top: -1rem;
+}
+
+.christmas_ph {
+    width: 50%;
+}
+
+.art_within_mixology_ph {
+    width: 50%;
+}
+
+.button_3block_2 {
+    background-color: transparent;
+    border: 1px solid #00AFC7;
+    color: white;
+    width: 13.8rem;
+    height: 3.53rem;
+    font-size: 1.6rem;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s;
+}
+
+.button_3block_2:hover {
+    background-color: #00AFC7;
+  }
+
+.texts_btn_art_within_mixology_div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.footer {
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+
+.logo_footer {
+    width: 10.75rem;
+    margin-bottom: 2.66rem;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.66rem;
+}
+
+.footer_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 12rem;
+    margin-right: 6rem;
+}
+
+.footer_adress {
+    margin-top: 0.66rem;
+}
+
+.button_footer {
+    margin-top: 2rem;
+    width: 15.66rem;
+    height: 3.53rem;
+    background-color: transparent;
+    border: 1px solid #00AFC7;
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s;
+}
+
+.button_footer:hover {
+    background-color: #00AFC7;
+  }
+
+.google-map {
+    border-radius: 3px;
+    width: 40rem;
+}
+
+form {
+    align-items: center;
+}
+
+.form-group {
+    width: 20rem;
+    height: 2rem;
+}
+
+.form-control {
+    width: 20rem;
+    height: 2rem;
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+
+.form-main-div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+
+}
+
+.btn-submit {
+    background-color:#00AFC7;
+    border: 1px solid #00AFC7;
+    color: white;
+    width: 20rem;
+    height: 3.53rem;
+    font-size: 1.6rem;
+    border-radius: 2rem;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s;
+    margin-top: 1rem;
+}
+
+.btn-submit:hover {
+    background-color: white;
+    color: #00AFC7;
+}

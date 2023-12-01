@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Nemo Restaurant Terrace</title>
+</head>
+<body>
+        <header>
+            <div class="nav-top">
+                <p class="header-adress">Sumska street, 35, Kharkiv,<br> info@nemo.ua</p>
+                <a href="/"><div class="logo"><img src="{{ url_for('static', filename='images/main_logo.png') }}" alt="logo"></div></a>
+                <div class="socials">
+                    <a href='https://www.instagram.com/dolphinarium_nemo_kh/?hl=en'><div class="inst"><img src="{{ url_for('static', filename='images/instagram-logo-icon.png') }}" alt="instagram-logo-icon"></div></a>
+                    <a href='https://www.youtube.com/@user-ic4us3vx8l'><div class="youtube"><img src="static/images/youtube-icon.png" alt="youtube-icon"></div></a>
+                    <a href='https://www.facebook.com/delfinariyKharkov/'><div class="facebook"><img src="static/images/facebook-icon.png" alt="facebook-icon"></div></a>
+                </div>
+            </div>
+            <span class="line">""</span>
+            <div class="nav-bottom">
+                <div class="nav-links">
+                    <a href="/dolphinarium">dolphinarium</a>
+                    <a href="/hotel">hotel</a>
+                </div>
+                <a href='/contact'><button type="button" class="button_header">BOOK</button></a>
+            </div>
+        </header>
+
+            <img class="main-img-1block" src="static/images/restaurant-main-img.png"> 
+            <img class="main-img-1block-mob" src="static/images/main-img-1block-mob.png"> 
+            
+            <div class="third_block">
+                <div class="christmas_div">
+                    <div class="christmas_ph"><img src="{{ url_for('static', filename='images/christmas-img.jpg') }}" alt="christmas_ph"></div>
+                    <script src="./script.js"></script>
+                    <div class="texts_btn_christmas_div">
+                        <h2>CHRISTMAS EVE</h2>
+                        <p class="christmas_p">Join us for Christmas Eve and enjoy truly indulgent dishes from our Christmas Eve menu, in stunning surroundings with the sounds of Kharkiv’s best live music artists.</p>
+                        <a href='/contact'><button type="button" class="button_3block_1">BOOK A TABLE</button></a>
+                        <script src="./script.js"></script>
+                    </div>
+                </div>
+                <span class="line_2">""</span>
+            </div>
+        <div class="next_block">
+            <h1>
+                Taste the best food in town at <span class="nemo">Nemo Terrace Restaurant</span>
+            </h1>
+            <script src="./script.js"></script>
+                <div class="menu_type">
+                    <div class="menu_type_div">
+                        <div class="menu_type_ph"><img src="{{ url_for('static', filename='images/octopus-img.png') }}" alt="octopus-img"></div>
+                    </div>
+                    <div class="menu_type_div">
+                        <div class="menu_type_ph"><img src="{{ url_for('static', filename='images/bar-img.png') }}" alt="bar-img"></div>
+                    </div>
+                    <div class="menu_type_div">
+                        <div class="menu_type_ph"><img src="{{ url_for('static', filename='images/hookah-img.png') }}" alt="hookah-img"></div>
+                    </div>
+                </div>
+                <div class="buttons_2block">
+                    <a href="static/files/menu.pdf"><button type="button" class="button_2block_1">DOWNLOAD MENU</button></a>
+                    <script src="./script.js"></script>
+                </div>
+                <script src="./script.js"></script>
+        </div>
+        <span class="line_2">""</span>
+        <div class="footer">
+            <div class="footer_info_main">
+                <a href="/"><div class="logo_footer"><img src="{{ url_for('static', filename='images/main_logo.png') }}" alt="logo"></div></a>
+                <div class="footer_info">
+                    <div class="footer_links">
+                    <a href="/dolphinarium">dolphinarium</a>
+                    <a href="/hotel">hotel</a>
+                    </div>
+                    <div class="footer_links_btn">
+                        <p>+38-(077)-777-77-77</p>
+                        <p class="footer_adress">Sumska street, 35, Kharkiv,<br> info@nemo.ua</p>
+                        <a href='/contact'><button type="button" class="button_footer">CONTACT US</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.5903023150886!2d36.224168776530746!3d50.00029017150969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0e3e74b2b2b%3A0xc583ec716284b62!2sHotel%20%26%20Spa%20NEMO%20with%20dolphins!5e0!3m2!1sen!2suk!4v1701416867258!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<DOCTYPE html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Book a visit</title>
+</head>
+<body>
+        <header>
+            <div class="nav-top">
+                <p class="header-adress">Sumska street, 35, Kharkiv,<br> info@nemo.ua</p>
+                <a href="/"><div class="logo"><img src="{{ url_for('static', filename='images/main_logo.png') }}" alt="logo"></div></a>
+                <div class="socials">
+                    <a href='https://www.instagram.com/dolphinarium_nemo_kh/?hl=en'><div class="inst"><img src="{{ url_for('static', filename='images/instagram-logo-icon.png') }}" alt="instagram-logo-icon"></div></a>
+                    <a href='https://www.youtube.com/@user-ic4us3vx8l'><div class="youtube"><img src="static/images/youtube-icon.png" alt="youtube-icon"></div></a>
+                    <a href='https://www.facebook.com/delfinariyKharkov/'><div class="facebook"><img src="static/images/facebook-icon.png" alt="facebook-icon"></div></a>
+                </div>
+            </div>
+            <span class="line">""</span>
+            <div class="nav-bottom">
+                <div class="nav-links">
+                    <a href="/restaurant">restaurant</a>
+                    <a href="/dolphinarium">dolphinarium</a>
+                    <a href="/hotel">hotel</a>
+                </div>
+            </div>
+
+            <div class="next_block_form">
+                <h1>
+                    Thank you for booking a visit to <span class="nemo">Nemo</span> in Kharkiv
+                </h1>
+                <small> Please Check Your Information </small>
+                <br/><br/>
+                {{ first_name }} {{ last_name }} || {{ email }}
+                </div>
+
+            <div class="footer">
+                <div class="footer_info_main">
+                    <a href="/"><div class="logo_footer"><img src="{{ url_for('static', filename='images/main_logo.png') }}" alt="logo"></div></a>
+                    <div class="footer_info">
+                        <div class="footer_links">
+                        <a href="/restaurant">restaurant</a>
+                        <a href="/dolphinarium">dolphinarium</a>
+                        <a href="/hotel">hotel</a>
+                        </div>
+                        <div class="footer_links_btn">
+                            <p>+38-(077)-777-77-77</p>
+                            <p class="footer_adress">Sumska street, 35, Kharkiv,<br> info@nemo.ua</p>
+                            <button type="button" class="button_footer">CONTACT US</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.5903023150886!2d36.224168776530746!3d50.00029017150969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0e3e74b2b2b%3A0xc583ec716284b62!2sHotel%20%26%20Spa%20NEMO%20with%20dolphins!5e0!3m2!1sen!2suk!4v1701416867258!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+    
+        </body>
+        </html>
